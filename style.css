@@ -1,0 +1,124 @@
+/* global styles */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* navigation bar */
+
+.main-head {
+  background: teal;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  box-shadow: 10px 10px 5px grey;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.img1 {
+  height: 60px;
+  width: 60px;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  font-family: "Zen Antique", serif;
+  font-size: 40px;
+  /* font-weight: 500; */
+}
+
+#logo {
+  flex: 3 1 40rem;
+  font-family: "Lobster", cursive;
+  font-weight: 500;
+  font-size: 40px;
+  color: beige;
+}
+
+button {
+  padding: 2rem 5rem;
+  background: rgb(84, 115, 196);
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  background: darkgreen;
+  font-size: 2rem;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/Images/pexels-jaime-reimer-2662116.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2,
+h3 {
+  padding: 5rem;
+}
