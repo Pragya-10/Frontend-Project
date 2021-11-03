@@ -52,7 +52,7 @@ a {
   position: sticky;
   top: 0px;
   z-index: 3;
-  box-shadow: 10px 10px 5px grey;
+  /* box-shadow: 10px 10px 5px grey; */
 }
 
 nav {
@@ -105,13 +105,13 @@ button:hover {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
     url(/Images/pexels-jaime-reimer-2662116.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  color: black;
+  color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -122,3 +122,69 @@ button:hover {
 h3 {
   padding: 5rem;
 }
+
+/* Contacts */
+
+#contacts {
+  min-height: 100vh;
+  background: url(/Images/pexels-pixabay-247474.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+.contact1 {
+  padding: 1rem;
+  font-family: "Acme", sans-serif;
+  color: white;
+}
+
+.form-head {
+  text-align: center;
+  padding: 1rem;
+}
+
+.name-form,
+.email-form,
+.message-form {
+  padding: 1rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+  padding: 1rem 1rem;
+}
+
+/* footer {
+  background: rgb(59, 63, 75);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.copyright {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+} */
