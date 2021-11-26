@@ -109,6 +109,18 @@ button:hover {
   font-size: 2rem;
 }
 
+/* nav ul li a {
+  padding: 9px, 15px;
+  border-radius: 6px;
+} */
+
+.list:hover {
+  background: rgb(6, 104, 104);
+  transition: 0.5s;
+  padding: 6px;
+  border-radius: 8px;
+}
+
 .hero {
   min-height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
@@ -150,8 +162,8 @@ h3 {
 
 .contact1 {
   padding: 1rem;
-  font-family: "Acme", sans-serif;
-  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: tomato;
 }
 
 .form-head {
@@ -182,6 +194,11 @@ h3 {
   padding: 1rem 1rem;
 }
 
+#message {
+  margin-left: 22%;
+  margin-right: 20%;
+}
+
 .container {
   max-width: 100%;
   margin: auto;
@@ -209,7 +226,8 @@ ul {
 }
 .footer {
   background: rgb(37, 37, 37);
-  padding: 70px 0;
+  padding: 20px 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer-col {
@@ -219,7 +237,7 @@ ul {
 
 .footer-col h4 {
   font-size: 18px;
-  color: #ffff;
+  color: burlywood;
   text-transform: capitalize;
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
@@ -239,7 +257,7 @@ ul {
 }
 .footer-col ul li,
 p {
-  color: bisque;
+  color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
   font-size: medium;
 }
@@ -249,13 +267,133 @@ p {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
+  text-decoration: none;
   color: #ffff;
   font-weight: 300;
   color: #bbbb;
   display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
 }
 
 .social-links {
-  height: 3rem;
-  width: 3rem;
+  display: flex;
 }
+
+.social-links-f {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.social-links-i {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 40%;
+}
+
+.social-links-t {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 90%;
+}
+.social-links-y {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 70%;
+}
+
+#locations {
+  min-height: 100vh;
+  background: url(/Images/pexels-gradienta-7130560.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* location */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.card_title p {
+  margin-top: 4rem;
+  color: #d31d1d;
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.benefits {
+  min-height: 100vh;
+  background: url(/Images/pexels-gradienta-7130560.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .benefits-head {
+  background: rgb(23, 59, 71);
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+} */
