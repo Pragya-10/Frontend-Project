@@ -71,9 +71,87 @@ nav {
   padding: 1rem;
 }
 
-.search {
+/* .search {
   padding: 0.8rem;
   border-radius: 2rem;
+} */
+
+.search {
+  width: 320px;
+  height: auto;
+  background-color: #1e272e;
+  /*   margin: 20vh auto; */
+  position: relative;
+  top: 30px;
+  right: -160px;
+  transform: translate(-50%, -50%);
+  border-radius: 4rem;
+  padding: 10px;
+}
+
+.search__box {
+  float: left;
+  width: 0;
+  height: 4rem;
+  /*   display: inline; */
+  background: none;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  position: relative;
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  cursor: pointer;
+  /*   border: 2px solid tomato; */
+  /*   margin-top: 5px; */
+}
+
+/* .search_box:focus, .search_box:hover {
+  background-color: #f1f2f6;
+  } */
+
+.search__icon {
+  box-sizing: border-box;
+  float: right;
+  font-size: 2.5rem;
+  display: inline-block;
+  /*   justify-content: center;
+  align-items: center; */
+  margin-left: 0.8rem;
+  margin-top: 0;
+  cursor: pointer;
+  position: absolute;
+  color: rgb(6, 104, 104);
+  transition: all 0.55s ease-in;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.search:hover > .search__box {
+  width: 85%;
+  padding: 0 1rem;
+}
+
+.search:hover > .search__icon {
+  background-color: #eee;
+}
+
+.show {
+  width: 85%;
+  border: 1px solid red;
+}
+
+.list.active {
+  background-color: #ffffff;
+  color: rgb(6, 104, 104);
+  /* transition: 0.5s; */
+  padding: 4px 6px 6px 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
 }
 
 nav ul {
@@ -117,8 +195,11 @@ button:hover {
 .list:hover {
   background: rgb(6, 104, 104);
   transition: 0.5s;
-  padding: 6px;
+  padding: 4px 6px 6px 6px;
   border-radius: 8px;
+}
+.list.active:hover {
+  background: white;
 }
 
 .hero {
@@ -307,7 +388,8 @@ p {
 
 #locations {
   min-height: 100vh;
-  background: url(/Images/pexels-gradienta-7130560.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    rgb(65, 183, 204);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -374,26 +456,37 @@ p {
 
 .benefits {
   min-height: 100vh;
-  background: url(/Images/pexels-gradienta-7130560.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    rgb(65, 183, 204);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-/* .benefits-head {
-  background: rgb(23, 59, 71);
-  padding: 3rem;
-  min-height: 30vh;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
 }
 
-.benefits-head h3 {
-  padding: 1rem;
+/* .headd {
+  font-family: cursive;
+  color: rgb(5, 5, 5);
+  font-weight: 700;
+  display: flex;
+  padding: 30px 0px 10px 0px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
 } */
+
+.benifitH1 {
+  color: white;
+  padding-top: 5rem;
+  font-style: bold;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px;
+}
+
+.move {
+  color: #ff0000;
+  font-size: 2rem;
+  font-style: italic;
+}

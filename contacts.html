@@ -17,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
     <title>Travellers |Contacts</title>
   </head>
   <body>
@@ -29,8 +33,21 @@
         <ul>
           <li><a class="list" href="/locations.html">Locations</a></li>
           <li><a class="list" href="benefits.html">Benefits</a></li>
-          <li><a class="list" href="/contacts.html">Contacts</a></li>
-          <input class="search" type="text" placeholder="Search.." />
+          <li><a class="list active" href="/contacts.html">Contacts</a></li>
+          <!-- <input class="search" type="text" placeholder="Search.." /> -->
+          <div class="search">
+            <input
+              type="text"
+              id="box"
+              placeholder="Search anything..."
+              class="search__box"
+            />
+            <i
+              class="fas fa-search search__icon"
+              id="icon"
+              onclick="toggleShow()"
+            ></i>
+          </div>
         </ul>
       </nav>
     </header>
@@ -50,7 +67,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="happy@gmail.com"
+                placeholder="Your Email Address"
                 required
               />
             </div>
@@ -92,7 +109,7 @@
             <ul>
               <li><a href="#">Flights</a></li>
               <li><a href="#">Hotels</a></li>
-              <li><a href="#">Site Seeing</a></li>
+              <li><a href="#">Adventures</a></li>
             </ul>
           </div>
           <div class="footer-col">
